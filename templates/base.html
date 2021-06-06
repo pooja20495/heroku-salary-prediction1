@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Google</title>
+    </head>
+
+    <body>
+        <form action='predict' method="post">
+        <input type = 'number' name = 'exp' placeholder='exp' required = 'required' />
+        <input type = 'number' name = 'test_score' placeholder='test_score' required = 'required' />
+        <input type = 'number' name = 'interview_score' placeholder='interview_score' required = 'required' />
+
+        <button type='Submit'> Predict </button>
+        </form>
+        
+        {{ prediction_text }}
+    </body>
+</html>
